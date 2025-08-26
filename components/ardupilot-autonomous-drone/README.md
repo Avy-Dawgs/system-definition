@@ -1,2 +1,5 @@
+# ArduPilot Autonomous Drone
 ## Description 
-Unmodified autonomous drone system running ArduPilot firmware. 
+Autonomous drone system running ArduPilot firmware, built from commercially available parts.
+
+## Parts List

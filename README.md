@@ -15,3 +15,4 @@ beacons back to a base station.
 * Requirements and specifications are listed by component in the ```components``` folder.
 * Interfaces between components are described in the ```interfaces``` folder.
 * Diagrams are all made in drawio and saved as svg, and can be found in the ```diagrams``` folder.
+    * Note that all diagrams are embedded in their corresponding markdown files.

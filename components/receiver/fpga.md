@@ -1,10 +1,13 @@
-# FPGA Firmware
-## Diagram
+# FPGA
+
+## Firmware Diagram
 ![](../../diagrams/receiver-firmware.drawio.svg)
 ## Description 
-The firmware will be responsible for converting a stream of ADC samples into 457 kHz power values. Additionally, the firmware will also control the gain of the PGAs.
-## Inputs 
+The FPGA will be responsible for converting a stream of ADC samples into 457 kHz power values. 
+Additionally, the firmware will also control the gain of the PGAs.
+The FPGA board is the Digilent CMOD A7-35T.
 
+## Inputs 
 | Name     | Width |
 | -------- | ----- |
 | ADC Data | 12    |
@@ -15,7 +18,8 @@ The firmware will be responsible for converting a stream of ADC samples into 457
 | UART RSSI        | 1     |
 | PGA Stage 1 Ctrl | 2     |
 | PGA Stage 2 Ctrl | 2     |
-## Components
+
+## Firmware Components
 * Simple low-pass filter to remove DC 
 	* Can be disabled to prevent updates to internal state
 * Goertzel algorithm to computer power at 457 kHz  
