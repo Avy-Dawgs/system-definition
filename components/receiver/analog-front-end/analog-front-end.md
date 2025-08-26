@@ -1,4 +1,7 @@
 # Analog Front End
+## Diagram 
+![](../../../diagrams/receiver-analog-front-end.drawio.svg)
+
 ## Description
 The analog front end will take a signal from the antenna, filter it, amplify it, and digitize it. 
 The signal chain will consist of an LNA, followed by a band pass filter, then two stages of programmable gain amplifiers, and finally the ADC.
