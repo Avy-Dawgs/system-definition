@@ -16,8 +16,36 @@
 * May have to use 0 as target sysid for broadcast
 * Uses a payload value to distinguish between different messages
 
-### Payload Values
-| Name                   | Payload Value | Args           |
-| ---------------------- | ------------- | -------------- |
-| Victim Location Local  |               | x, y, z, rssi  |
-| Victim Location Global |               | lat, lng, rssi |
+### Payloads 
+
+#### Victim Location Local
+* payload value: 1
+* payload length: 12
+* bytes:
+    * 0-3: float x  (m)
+    * 4-7: float y  (m)
+    * 8-11: float rssi  (dBFS)
+
+#### Victim Location Global
+* payload value: 2
+* payload length: 12
+* bytes:
+    * 0-3: float lat  (latitude)
+    * 4-7: float lng  (lognitude)
+    * 8-11: float rssi  (dBFS)
+
+#### RSSI Location Local
+* payload value: 3
+* payload length: 12
+* bytes:
+    * 0-3: float x  (m)
+    * 4-7: float y  (m)
+    * 8-11: float rssi  (dBFS)
+
+#### RSSI Location Global
+* payload value: 4
+* payload length: 12
+* bytes:
+    * 0-3: float lat  (latitude)
+    * 4-7: float lng  (lognitude)
+    * 8-11: float rssi  (dBFS)
