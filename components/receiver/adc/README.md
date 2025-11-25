@@ -1,4 +1,6 @@
 # ADC 
-* ~10 MSPS 
+Part name: LTC2315
+* ~5 MSPS 
 * 12 bit 
-* Parallel interface
+* Serial SPI interface
+

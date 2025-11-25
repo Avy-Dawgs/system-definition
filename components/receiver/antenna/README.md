@@ -5,4 +5,4 @@
     * Longer winding used for resonant circuit
     * Signal taken from shorter winding
 * Wound using litz wire 
-* Receive 457 kHz adequately at close range (<1/6 wavelength a.k.a. reactive nearfield)
+* Receives 457 kHz adequately at close range (<1/6 wavelength a.k.a. reactive nearfield)

@@ -5,25 +5,25 @@
 ## Description 
 The FPGA will be responsible for converting a stream of ADC samples into 457 kHz power values. 
 Additionally, the firmware will also control the gain of the PGAs.
-The FPGA board is the Digilent CMOD A7-35T.
+The FPGA board is the Digilent CMOD S7.
 
 ## Inputs 
 | Name     | Width |
 | -------- | ----- |
-| ADC Data | 12    |
-## Outputs 
+| ADC MISO | 1     |
 
+## Outputs 
 | Name             | Width |
 | ---------------- | ----- |
-| UART RSSI        | 1     |
-| PGA Stage 1 Ctrl | 2     |
-| PGA Stage 2 Ctrl | 2     |
+| ADC SCK          | 1     | 
+| ADC CS_N         | 1     |
+| PGA MOSI         | 1     |
+| PGA SCK          | 1     | 
+| PGA CS_N         | 1     | 
+| HGA Bypass       | 1     |
+| UART TX          | 1     |
 
 ## Firmware Components
-* Simple low-pass filter to remove DC 
-	* Can be disabled to prevent updates to internal state
-* Goertzel algorithm to computer power at 457 kHz  
-	* Is explicitly started to prevent processing of samples during certain periods
-* Leading one finder + mantissa LUT to convert to dB 
-* Control block for amplifier gain control 
-	* Waits for some settle time after changing gain before resuming processing
+* Low-pass filter to remove DC offset
+* Narrowband digital down conversion to convert to baseband with a very narrow bandwidth
+* Gain control state machine to keep incoming signal within ADC range

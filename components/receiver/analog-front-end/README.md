@@ -8,8 +8,8 @@ The analog front end will take a signal from the antenna, filter it, and amplify
 ## Inputs 
 | Name             | Type    | Width        |
 | ---------------- | ------- | ------------ |
-| High Gain Bypass | Digital | 1 bit        |
-| PGA Ctrl | Digital | Serial        |
+| HGA Bypass       | Digital | 1 bit        |
+| PGA Ctrl         | Digital | Serial       |
 | Antenna Signal   | Analog  | Single Ended |
 
 ## Outputs 
@@ -28,11 +28,11 @@ The analog front end will take a signal from the antenna, filter it, and amplify
 * Narrow pass band, (ideally close to 160 Hz) centered at 457 kHz 
 * Pass band attenuation less than 10 dB
 
-### High Gain Amplifier 
+### High Gain Amplifier (HGA)
 * Gain of about 42 dB 
 * Can by bypassed via bidirectional analog muxes on either side 
 * Tuned so that it doesn't amplify noise as strongly
 
-### PGA
+### Programmable Gain Amplifier (PGA)
 * Opamp in inverting configuration so that it can amplify or attenuate
 * Controllable via writing to a digital potentiometer
