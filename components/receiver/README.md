@@ -1,6 +1,6 @@
 # Receiver 
 ## Diagram
-![](../../diagrams/receiver.drawio.svg)
+![](../../.diagrams/receiver.drawio.svg)
 
 ## Description 
 The receiver detects the RSSI at 457 kHz. 

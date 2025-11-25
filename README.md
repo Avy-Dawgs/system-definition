@@ -2,7 +2,7 @@
 Diagrams, requirements, and specifications for components and interfaces that make up the system.
 
 ## System Diagram
-![](./diagrams/system-diagram.drawio.svg)
+![](./.diagrams/system-diagram.drawio.svg)
 
 This diagram shows the top level components of the system, divided into two different physical systems, the drone 
 and the base station.

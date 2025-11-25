@@ -1,6 +1,6 @@
 # Analog Front End
 ## Diagram 
-![](../../../diagrams/receiver-analog-front-end.drawio.svg)
+![](../../../.diagrams/receiver-analog-front-end.drawio.svg)
 
 ## Description
 The analog front end will take a signal from the antenna, filter it, and amplify it.

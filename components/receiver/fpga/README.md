@@ -1,7 +1,7 @@
 # FPGA
 
 ## Firmware Diagram
-![](../../../diagrams/receiver-firmware.drawio.svg)
+![](../../../.diagrams/receiver-firmware.drawio.svg)
 ## Description 
 The FPGA will be responsible for converting a stream of ADC samples into 457 kHz power values. 
 Additionally, the firmware will also control the gain of the PGAs.
